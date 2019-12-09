@@ -14,10 +14,13 @@
 		84B7BCE9239ED23900C76A88 /* CarDemoProject.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 84B7BCE7239ED23900C76A88 /* CarDemoProject.xcdatamodeld */; };
 		84B7BCEB239ED23C00C76A88 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84B7BCEA239ED23C00C76A88 /* Assets.xcassets */; };
 		84B7BCEE239ED23C00C76A88 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84B7BCEC239ED23C00C76A88 /* LaunchScreen.storyboard */; };
+		84B7BCFA239EEB4F00C76A88 /* data.plist in Resources */ = {isa = PBXBuildFile; fileRef = 84B7BCF9239EEB4F00C76A88 /* data.plist */; };
+		84B7BCFB239EECF100C76A88 /* Car+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B7BCF5239EE5CE00C76A88 /* Car+CoreDataClass.swift */; };
+		84B7BCFC239EECF100C76A88 /* Car+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B7BCF6239EE5CE00C76A88 /* Car+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		84B7BCDB239ED23800C76A88 /* CarDemoProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CarDemoProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		84B7BCDB239ED23800C76A88 /* CoreDataDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreDataDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84B7BCDE239ED23800C76A88 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		84B7BCE0239ED23800C76A88 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		84B7BCE2239ED23800C76A88 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -26,6 +29,9 @@
 		84B7BCEA239ED23C00C76A88 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		84B7BCED239ED23C00C76A88 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		84B7BCEF239ED23C00C76A88 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84B7BCF5239EE5CE00C76A88 /* Car+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Car+CoreDataClass.swift"; sourceTree = "<group>"; };
+		84B7BCF6239EE5CE00C76A88 /* Car+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Car+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		84B7BCF9239EEB4F00C76A88 /* data.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = data.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +48,8 @@
 		84B7BCD2239ED23800C76A88 = {
 			isa = PBXGroup;
 			children = (
+				84B7BCF5239EE5CE00C76A88 /* Car+CoreDataClass.swift */,
+				84B7BCF6239EE5CE00C76A88 /* Car+CoreDataProperties.swift */,
 				84B7BCDD239ED23800C76A88 /* CarDemoProject */,
 				84B7BCDC239ED23800C76A88 /* Products */,
 			);
@@ -50,7 +58,7 @@
 		84B7BCDC239ED23800C76A88 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				84B7BCDB239ED23800C76A88 /* CarDemoProject.app */,
+				84B7BCDB239ED23800C76A88 /* CoreDataDemo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -65,6 +73,7 @@
 				84B7BCEA239ED23C00C76A88 /* Assets.xcassets */,
 				84B7BCEC239ED23C00C76A88 /* LaunchScreen.storyboard */,
 				84B7BCEF239ED23C00C76A88 /* Info.plist */,
+				84B7BCF9239EEB4F00C76A88 /* data.plist */,
 				84B7BCE7239ED23900C76A88 /* CarDemoProject.xcdatamodeld */,
 			);
 			path = CarDemoProject;
@@ -73,9 +82,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		84B7BCDA239ED23800C76A88 /* CarDemoProject */ = {
+		84B7BCDA239ED23800C76A88 /* CoreDataDemo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 84B7BCF2239ED23C00C76A88 /* Build configuration list for PBXNativeTarget "CarDemoProject" */;
+			buildConfigurationList = 84B7BCF2239ED23C00C76A88 /* Build configuration list for PBXNativeTarget "CoreDataDemo" */;
 			buildPhases = (
 				84B7BCD7239ED23800C76A88 /* Sources */,
 				84B7BCD8239ED23800C76A88 /* Frameworks */,
@@ -85,9 +94,9 @@
 			);
 			dependencies = (
 			);
-			name = CarDemoProject;
+			name = CoreDataDemo;
 			productName = CarDemoProject;
-			productReference = 84B7BCDB239ED23800C76A88 /* CarDemoProject.app */;
+			productReference = 84B7BCDB239ED23800C76A88 /* CoreDataDemo.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -105,7 +114,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 84B7BCD6239ED23800C76A88 /* Build configuration list for PBXProject "CarDemoProject" */;
+			buildConfigurationList = 84B7BCD6239ED23800C76A88 /* Build configuration list for PBXProject "CoreDataDemo" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -118,7 +127,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				84B7BCDA239ED23800C76A88 /* CarDemoProject */,
+				84B7BCDA239ED23800C76A88 /* CoreDataDemo */,
 			);
 		};
 /* End PBXProject section */
@@ -130,6 +139,7 @@
 			files = (
 				84B7BCEE239ED23C00C76A88 /* LaunchScreen.storyboard in Resources */,
 				84B7BCEB239ED23C00C76A88 /* Assets.xcassets in Resources */,
+				84B7BCFA239EEB4F00C76A88 /* data.plist in Resources */,
 				84B7BCE6239ED23900C76A88 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -141,6 +151,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84B7BCFB239EECF100C76A88 /* Car+CoreDataClass.swift in Sources */,
+				84B7BCFC239EECF100C76A88 /* Car+CoreDataProperties.swift in Sources */,
 				84B7BCE3239ED23800C76A88 /* ViewController.swift in Sources */,
 				84B7BCE9239ED23900C76A88 /* CarDemoProject.xcdatamodeld in Sources */,
 				84B7BCDF239ED23800C76A88 /* AppDelegate.swift in Sources */,
@@ -295,7 +307,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.sais.CarDemoProject;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sais.CoreDataDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -313,7 +325,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.sais.CarDemoProject;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sais.CoreDataDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -323,7 +335,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		84B7BCD6239ED23800C76A88 /* Build configuration list for PBXProject "CarDemoProject" */ = {
+		84B7BCD6239ED23800C76A88 /* Build configuration list for PBXProject "CoreDataDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				84B7BCF0239ED23C00C76A88 /* Debug */,
@@ -332,7 +344,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		84B7BCF2239ED23C00C76A88 /* Build configuration list for PBXNativeTarget "CarDemoProject" */ = {
+		84B7BCF2239ED23C00C76A88 /* Build configuration list for PBXNativeTarget "CoreDataDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				84B7BCF3239ED23C00C76A88 /* Debug */,
